@@ -1,0 +1,5 @@
+melhorias código:
+
+- stories: remover flex-wrap: wrap e white-space: no-wrap, usar gap
+- input placeholder
+- 
