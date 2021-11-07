@@ -16,6 +16,11 @@ input:focus {
     outline: none;
 }
 
+input:focus::placeholder {
+    color: transparent;
+    text-align: left;
+}
+
 .space-between {
     display: flex;
     justify-content: space-between;
@@ -150,12 +155,12 @@ ion-icon {
 }
 
 .sidebar-header div span:first-child {
-font-size: 14px;
-font-weight: 500;
-line-height: 16px;
-letter-spacing: 0em;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
 
-color: #262626;
+    color: #262626;
 }
 
 .sidebar-header div span:last-child {
@@ -166,8 +171,8 @@ color: #262626;
 
     margin-top: 2px;
 
-color: #8E8E8E;
-    }
+    color: #8E8E8E;
+}
 
 .sidebar-suggestions {
     width: 100%;
@@ -563,6 +568,14 @@ color: #8E8E8E;
         width: 100%;
     }
 
+    .top-menu > ion-icon {
+        margin-left: 21.38px;
+    }
+
+    .top-menu .icons ion-icon:last-child {
+    margin-right: 21.38px;
+    }
+
     .sidebar {
         display: none;
     }
@@ -598,6 +611,7 @@ color: #8E8E8E;
 
     .top-menu .icons ion-icon:first-child {
         display: block;
+        margin-right: 21.38px;
     }
 
     .top-menu {
@@ -608,12 +622,24 @@ color: #8E8E8E;
         display: none;
     }
 
+    .content {
+    margin-top: 54px;
+    border-top: none;
+}
+
     .stories {
         width: 100%;
+        border: none;
+        margin-bottom: 0px;
     }
 
     .feed {
         width: 100%;
+    }
+
+    .post {
+        border-left: none;
+        border-right: none;
     }
 
     .video-container {
