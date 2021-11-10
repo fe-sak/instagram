@@ -3,7 +3,7 @@
 }
 
 img {
-    border-radius: 100%;    /* Todas as imagens, exceto a do post e do logo, possuem bordas redondas  */
+    border-radius: 100%;
 }
 body {
     width: 100%;
@@ -30,7 +30,6 @@ ion-icon {
     cursor: pointer;
 }
 
-/* Header do site */
 .top{
     width: 100%;
     height: 54px;
@@ -92,9 +91,12 @@ ion-icon {
     
     width: 215px;
     height: 28px;
+
     text-align: center;
+
     color: #979797;
     background-color: #fafafa;
+
     border: 1px solid #dbdbdb;
     border-radius: 3px;
 
@@ -115,14 +117,11 @@ ion-icon {
     margin-left: 25.5px;
 }
 
-/* Main do site */
 .content {
     width: 935px;
 
     margin: 88px auto 0 auto;
 }
-
-/* Sidebar */
 
 .sidebar {
     width: 293px;
@@ -130,16 +129,14 @@ ion-icon {
 
     position: fixed;
     top: 88px;
-
-    /* background-color: yellow; */
     
     margin-left: 642px;  
 }
 
 .sidebar-header {
-    margin-top: 23px;
-    /* background-color: skyblue; */
     display: flex;
+    
+    margin-top: 23px;
 }
 .sidebar-header img {
     width: 56px;
@@ -150,23 +147,18 @@ ion-icon {
     display: flex;
     flex-direction: column;    
 
-    margin-top: 11px;
-    margin-left: 17px;
+    margin: 11px 0 0 17px;
 }
 
 .sidebar-header div span:first-child {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
+    font: 500 14px/16px roboto;
     letter-spacing: 0em;
 
     color: #262626;
 }
 
 .sidebar-header div span:last-child {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 16px;
+    font: 300 14px/16px roboto;
     letter-spacing: 0em;
 
     margin-top: 2px;
@@ -180,20 +172,16 @@ ion-icon {
     margin-top: 24px;
 }
 
-.sidebar-suggestions .space-between span:first-child {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 14px;
+.sidebar-suggestions .space-between span {
+    font: 500 12px/14px roboto;
     letter-spacing: 0em;
+}
+
+.sidebar-suggestions .space-between span:first-child {
     color: #8E8E8E;
 }
 
 .sidebar-suggestions .space-between span:last-child {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 14px;
-    letter-spacing: 0em;
-    
     color: #262626;
 }
 
@@ -225,18 +213,14 @@ ion-icon {
 }
 
 .suggestions div span:first-child {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
+    font: 500 14px/16px roboto;
     letter-spacing: 0em;
 }
 
 .suggestions div span:last-child {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14px;
+    font: 400 12px/14px roboto;
     letter-spacing: 0em;
-
+    
     color:#8E8E8E;
 }
 
@@ -244,9 +228,7 @@ ion-icon {
     position: absolute;
     right: 0;
 
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 14px;
+    font: 500 12px/14px roboto;
     letter-spacing: 0em;
 
     color: #139EF2;
@@ -254,18 +236,14 @@ ion-icon {
 
 .suggestions-container > span {
     display: block;
-
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 13px;
+    
+    font: 400 11px/13px roboto;
     letter-spacing: 0em;
 
     color: #C7C7C7;
 
     margin-top: 17px;
 }
-
-/* Barra de stories */
 
 .stories {
     width: 614px;
@@ -309,9 +287,7 @@ ion-icon {
 }
 
 .story span {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14px;
+    font: 400 12px/14px roboto;
     letter-spacing: 0em;
 }  
 
@@ -356,7 +332,6 @@ ion-icon {
     margin: 90px auto 14px auto;
 }
 
-/* Feed */
 .feed {
     width: 614px;
 }
@@ -436,8 +411,7 @@ ion-icon {
 }
 
 .post-footer .left {
-    margin-top: 12.06px;
-    margin-left: 17.75px;
+    margin: 12.06px 0 0 17.75px;
 }
 
 .post-footer .left ion-icon {
@@ -445,16 +419,14 @@ ion-icon {
 }
 
 .post-footer .right {
-    margin-top: 14px;
-    margin-right: 17.63px;
+    margin: 14px 17.63px 0 0;
 }
 
 .likes {
     display: flex;
     align-items: center;
 
-    margin-top: 12px;
-    margin-left: 17px;;
+    margin: 12px 0 0 17px;
 }
 
 .likes img {
@@ -478,8 +450,7 @@ ion-icon {
     width: 100%;
     height: auto;
 
-    margin-left: 17px;
-    margin-bottom: 3px;
+    margin: 0 0 3px 17px;
 }
 
 .comment span {
@@ -527,8 +498,7 @@ ion-icon {
 }
 
 .add-comment ion-icon {
-    margin-left: 17px;
-    margin-right: 10px;
+    margin: 0 10px 0 17px;
 
     font-size: 16.5px;
 }
@@ -584,14 +554,8 @@ ion-icon {
         width: 100%;
     }
 
-    .stories {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .feed {
-        margin-left: auto;
-        margin-right: auto;
+    .stories, .feed {
+        margin: 0 auto;
     }
 }
 
@@ -645,6 +609,7 @@ ion-icon {
     .video-container {
         width: 100%;
         height: 0;
+        
         padding-bottom: 100%;
     }
 
